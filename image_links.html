@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Links</title>
+  <style>
+    /* Basic styling for a clean layout */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0 2px 0 2px;
+      background-color: aqua;
+    }
+    h2{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: blue;
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+    }
+    .header{
+        text-align: center;
+        background: blue;
+        padding: 10px;
+    }
+    .nav{
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;    }
+    .nav a{
+        text-decoration: none;
+        color: #fff;
+        padding: 20px;
+    }
+    
+    .section {
+      margin-bottom: 20px;
+    }
+    .gallery, .menu{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .gallery img, .menu img{
+      width: 200px; /* Adjust width as needed */
+      margin: 5px;
+      display: inline-block;
+    } 
+    .gallery figcaption {
+        font-size: large;
+        font-weight: bolder;
+        position: absolute; /* Positions the caption element */
+        width: 200px; 
+        color: black; 
+        padding: 2px; /* Add padding for the caption text */
+        text-align: center; /* Centers the caption text horizontally */
+      }
+    .menu li{
+        display: inline-block;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .menu li a {
+      text-decoration: none;
+      color: black;
+      margin-bottom: 20px;
+      font-size: large;
+        font-weight: bolder;
+    }
+  </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <div class="nav">
+            <a href="#Home">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#menu">Menu</a>
+        </div>
+    </div>
+  <section class="section">
+    <h2>Home</h2>
+    <h1>Welcome to our Image Links Page!</h1>
+    <p style="font-size: 20px; color: blue;">Explore different Areas of Agriculture through linked images below.</p><br>
+    <a href="https://kilimo.go.ke/state-department-for-livestock/" target="_blank"><img src="/images/livestock.jpg" width="500px"alt="Agriculture Image"></a>
+    <a href="https://www.discovermeru.co.ke/fishing/" target="_blank"><img src="/images/pond.jpg" width="500px"alt="Agriculture Image"></a>
+    <a href="https://www.britannica.com/science/horticulture" target="_blank"><img src="/images/hortuculture.jpg" width="300px" height="330px"alt="Agriculture Image"></a>
+  </section>
+  
+  <section class="section">
+    <a name="gallery"></a>
+    <h2>Nature Gallery</h2>
+    <div class="gallery">
+      <a href="https://www.example.com/nature1"><img src="/images/old mutual.jpg" height="250px"alt="Old Mutual">
+        <figcaption>Old Mutual In Nairobi</figcaption></a>
+      
+      <a href="https://www.example.com/nature2"><img src="/images/mt. Kenya.jpg" alt="Mt. Kenya">
+        <figcaption>Mt. Kenya</figcaption></a>
+      
+      <a href="https://www.example.com/nature3"><img src="/images/ocean.jpg" alt="Ocean">
+        <figcaption>Indian Ocean</figcaption></a>
+        <a href="https://www.example.com/nature3"><img src="/images/ocean.jpg" alt="Ocean">
+            <figcaption>Indian Ocean</figcaption></a>
+            <a href="https://www.example.com/nature3"><img src="/images/ocean.jpg" alt="Ocean">
+                <figcaption>Indian Ocean</figcaption></a>
+                <a href="https://www.example.com/nature3"><img src="/images/ocean.jpg" alt="Ocean">
+                    <figcaption>Indian Ocean</figcaption></a>
+      
+    </div>
+  </section>
+  
+  <section class="section">
+    <a name="menu"></a>
+    <h2>Menu</h2>
+    <ul class="menu">
+      <li><a href="https://www.dominos.co.ke/" target="_blank"><img src="/images/pizza.jpg" alt="Pizza Image">  <figcaption>Dominos Pizza</figcaption></a></li>
+      <li><a href="https://kfc.ke/" target="_blank"><img src="/images/chips.jpg" alt="Pasta Image"> <figcaption>Chips</figcaption> </a></li>
+      <li><a href="https://cakecity.co.ke/" target="_blank"><img src="/images/cake.jpg" alt="Cake Image"> <figcaption>cake</figcaption> </a></li>
+    </ul>
+  </section>
+
+
+  <script>
+    window.onload = function() {
+      window.scrollTo(0, 0);
+    };
+  </script>
+</body>
+</html>
