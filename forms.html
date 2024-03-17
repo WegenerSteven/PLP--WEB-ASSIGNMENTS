@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>FORMS IN HTML</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <h1 style="text-align: center;margin-top: 10px;">Registration Form</h1>
+    <form>
+        <label for="student_name">Name:</label>
+        <input type="text" placeholder="Full name"name="student" id="student"  required><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Email address"name="email_address" id="email_address"  required><br>
+
+        <label for="address">Address:</label>
+        <input type="address" placeholder="Postal code"name="address" id="address"  required><br>
+
+        <label for="telephone">Telephone: </label>
+        <input type="tel" style="width: 50%;" name="telephone" placeholder="+254" id="telephone" required><br>
+
+        <fieldset>
+            <legend>Gender:</legend>
+            <input type="radio"name="gender" id="male" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio"name="gender" id="female" value="female">
+            <label for="female">Female</label><br>
+        </fieldset>
+
+<fieldset>
+    <legend>Course</legend>
+    <input type="checkbox" name="math" id="math" value="math">
+    <label for="math">Web Development</label><br>
+    <input type="checkbox" name="english"id="english"value="English">
+    <label for="english">Python</label><br>
+    <input type="checkbox" name="english"id="english"value="English">
+    <label for="english">Dart Programming</label><br>
+</fieldset>
+
+
+<button type="reset" name="" id="clear">Cancel</button>
+<button type="submit" name="" id="submit">Register</button>
+       
+
+        <!--onclick is used to call a javascript function -->  
+    </form> 
+<!--This form tag is used to create an HTML form for user input-->
+</body>
+</html>

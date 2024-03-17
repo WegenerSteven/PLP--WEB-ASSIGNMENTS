@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ffff;
+    font-family: sans-serif;
+}
+form{
+    margin: 20px auto; /*Center align horizontally*/
+    padding: 20px;
+    border: 2px solid magenta;
+    border-radius: 10px;
+    width: 500px;
+}
+/*Define styles for input fields*/
+input[type="text"], input[type="email"], input[type="address"], input[type="tel"] {
+    display: block;
+    width: 90%;
+    margin-top: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/*Define styles for buttons*/
+
+button[type="submit"],input[type="button"],button[type="reset"]{
+  width: 30%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  margin-top: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+ button[type="submit"]:hover{
+   background-color:green ;
+ }
+ button[type="reset"]:hover{
+   background-color: red;
+ }
+/*Define style for textarea field*/
+
+fieldset{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+legend{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(61, 213, 14);
+}
+/*Define style for select boxes and radio buttons.*/
+
+select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
